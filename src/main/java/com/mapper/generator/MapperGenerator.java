@@ -16,7 +16,7 @@ public class MapperGenerator {
     public static void main(String[] args) {
         FastAutoGenerator.create("jdbc:mysql://localhost:3306/mall", "root", "li123321")
                 .globalConfig(builder -> {
-                    builder.author("OliverCHIU") // 设置作者
+                    builder.author("OliverCHIU")
                             .enableSwagger() // 开启 swagger 模式
                             .fileOverride() // 覆盖已生成文件
                             .outputDir("D://"); // 指定输出目录
